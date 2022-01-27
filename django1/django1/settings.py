@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core.apps.CoreConfig',
+    'django_jenkins',  # for jenkins
 ]
 
 MIDDLEWARE = [
@@ -74,20 +75,20 @@ WSGI_APPLICATION = 'django1.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
+'''DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'djangodb',
     }
-}
+}'''
 
 
-'''DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-}'''
+}
 
 
 # Password validation
