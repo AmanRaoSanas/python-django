@@ -2,9 +2,9 @@ name: Dev Worflow -  Only Test
  
 on:
   pull_request:
-    branches: [develop]
+    branches: [main]
   push:
-    branches: [develop]
+    branches: [main]
  
 jobs:
   health-checkup-job: #Check the healthy by running tests
